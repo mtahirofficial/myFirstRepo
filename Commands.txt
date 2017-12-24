@@ -1,0 +1,273 @@
+Microsoft Windows [Version 10.0.15063]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+E:\Tahir>git --version
+git version 2.15.1.windows.2
+
+E:\Tahir>git init
+Initialized empty Git repository in E:/Tahir/.git/
+
+E:\Tahir>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Tahir.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\Tahir>git add .
+
+E:\Tahir>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Tahir.txt
+
+
+E:\Tahir>git remote add origin "https://github.com/mtahirofficial/myFirstRepo.git"
+
+E:\Tahir>git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/mtahirofficial/myFirstRepo.git'
+
+E:\Tahir>git commit -m "This is
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'MT161@DESKTOP-TGM52G7.(none)')
+
+E:\Tahir>git commit -m "This is Tahis"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'MT161@DESKTOP-TGM52G7.(none)')
+
+E:\Tahir>git config --global user.email "hmtahirs1@gmail.com"
+
+E:\Tahir>git config --global user.name "mtahirofficial"
+
+E:\Tahir>git commit -m "This is Tahis"
+[master (root-commit) f0ef118] This is Tahis
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Tahir.txt
+
+E:\Tahir>git push origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 223 bytes | 223.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mtahirofficial/myFirstRepo.git
+ * [new branch]      master -> master
+
+E:\Tahir>git branch
+* master
+
+E:\Tahir>git checkout master
+Already on 'master'
+
+E:\Tahir>git checkout -b latestBranch
+Switched to a new branch 'latestBranch'
+
+E:\Tahir>git branch
+* latestBranch
+  master
+
+E:\Tahir>git checkout master
+Switched to branch 'master'
+
+E:\Tahir>git branch
+  latestBranch
+* master
+
+E:\Tahir>git pull origin master
+From https://github.com/mtahirofficial/myFirstRepo
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+E:\Tahir>git checkout latestBranch
+Switched to branch 'latestBranch'
+
+E:\Tahir>git branch
+* latestBranch
+  master
+
+E:\Tahir>git push origin latestBranch
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/mtahirofficial/myFirstRepo.git
+ * [new branch]      latestBranch -> latestBranch
+
+E:\Tahir>git add .
+
+E:\Tahir>git push origin latestBranch
+Everything up-to-date
+
+E:\Tahir>git commit -m "This is new branch file"
+[latestBranch 24ba5a1] This is new branch file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 newTahir.txt
+
+E:\Tahir>git push origin latestBranch
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 295 bytes | 295.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mtahirofficial/myFirstRepo.git
+   f0ef118..24ba5a1  latestBranch -> latestBranch
+
+E:\Tahir>git branch
+* latestBranch
+  master
+
+E:\Tahir>git add .
+
+E:\Tahir>git commit -m "asdasd"
+[latestBranch bf58029] asdasd
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new Branch.txt
+
+E:\Tahir>git push origin latestBranch
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 302 bytes | 302.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mtahirofficial/myFirstRepo.git
+   24ba5a1..bf58029  latestBranch -> latestBranch
+
+E:\Tahir>git remote
+origin
+
+E:\Tahir>git branch
+* latestBranch
+  master
+
+E:\Tahir>git checkout master
+Switched to branch 'master'
+
+E:\Tahir>git checkout master
+Already on 'master'
+
+E:\Tahir>git show head
+commit f0ef118f256647aad5d7a94262dd8975c7f03a91 (HEAD -> master, origin/master)
+Author: mtahirofficial <hmtahirs1@gmail.com>
+Date:   Sun Dec 24 14:41:00 2017 +0500
+
+    This is Tahis
+
+diff --git a/Tahir.txt b/Tahir.txt
+new file mode 100644
+index 0000000..22c2b08
+--- /dev/null
++++ b/Tahir.txt
+@@ -0,0 +1 @@
++this is tahir
+\ No newline at end of file
+
+E:\Tahir>git status
+On branch master
+nothing to commit, working tree clean
+
+E:\Tahir>git add .
+
+E:\Tahir>git commit -m "for reset"
+[master d974a35] for reset
+ 1 file changed, 1 insertion(+)
+ create mode 100644 for reset.txt
+
+E:\Tahir>git status
+On branch master
+nothing to commit, working tree clean
+
+E:\Tahir>git reset
+
+E:\Tahir>git status
+On branch master
+nothing to commit, working tree clean
+
+E:\Tahir>git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 283 bytes | 283.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mtahirofficial/myFirstRepo.git
+   f0ef118..d974a35  master -> master
+
+E:\Tahir>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        newReset.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\Tahir>git reset hard
+fatal: ambiguous argument 'hard': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+E:\Tahir>git reset --hard
+HEAD is now at d974a35 for reset
+
+E:\Tahir>git pull origin master
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/mtahirofficial/myFirstRepo
+ * branch            master     -> FETCH_HEAD
+   d974a35..a937be4  master     -> origin/master
+Updating d974a35..a937be4
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+E:\Tahir>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        newReset.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\Tahir>git add .
+
+E:\Tahir>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   newReset.txt
+
+
+E:\Tahir>git reset --hard
+HEAD is now at a937be4 Create README.md
+
+E:\Tahir>
